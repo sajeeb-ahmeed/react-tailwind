@@ -22,7 +22,7 @@ const Route = () => {
                 {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
 
             </div>
-            <ul className={`md:flex justify-end m-5 absolute duration-700 ease-in ${open ? 'top-10' : 'top-[-150px]'}`}>
+            <ul className={`md:flex justify-end md:static m-5 absolute ${open ? 'top-6' : 'top-[-150px]'} `}>
                 {
                     Routes.map(route => <Link key={route.id} route={route}></Link>)
                 }
